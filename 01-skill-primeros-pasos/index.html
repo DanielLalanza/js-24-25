@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+    <script>
+        function saludar(){
+            // # CSS -> llamo a un elemento HTML
+            //   JS --> llamo a un elemento HTML
+            let txtLogin = document.getElementById("txtLogin").value;
+            let passwordtxt = document.getElementById("passwordtxt").value;
+            
+
+            if(txtLogin==="" && passwordtxt===""){
+                alert("Has dejado las casilla vacías")
+            } else if(txtLogin===""){
+                alert("Has dejado el user en blanco!")               
+            } else if(passwordtxt===""){
+                alert("La password está vacía")
+            } else{
+                alert("Has iniciado sesion con el user: " + txtLogin + "!!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>PRIMERA FUNCIÓN JS</h1>
+    <h4>Dime tu nombre</h4>
+    <input type="text" id="txtLogin">
+    <h4>Dime tu password</h4>
+    <input type="password" id="passwordtxt"/>
+    <p></p>
+    <input type="button" value="Login" onclick="saludar()"/>
+</body>
+</html>
