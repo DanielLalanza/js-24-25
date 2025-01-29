@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCRIPTFLIX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Encabezado principal -->
+  <header class="main-header">
+    <h1 class="logo">SCRIPTFLIX</h1>
+    <nav>
+      <!-- Botones de filtro rápido -->
+      <button class="quick-filter" data-genero="Animación">Animación</button>
+      <button class="quick-filter" data-genero="Acción">Acción</button>
+      <button class="quick-filter" data-genero="Ciencia Ficción">Ciencia Ficción</button>
+      <button class="quick-filter" data-genero="Romance">Romance</button>
+    </nav>
+  </header>
+
+  <!-- Controles de filtro y búsqueda -->
+  <section class="controls">
+    <label for="genreSelect">Filtrar por género:</label>
+    <select id="genreSelect">
+      <option value="Todos">Todos</option>
+    </select>
+
+    <label for="searchInput">Buscar título:</label>
+    <input type="text" id="searchInput" placeholder="Ingresa parte del título..." />
+    <button id="searchButton">Buscar</button>
+
+    <button id="sortButton" data-order="asc">Ordenar por año (ASC)</button>
+  </section>
+
+  <!-- Contenedor de películas -->
+  <main id="moviesContainer"></main>
+
+  <!-- Mensaje de error / sin resultados -->
+  <p id="noResultsMessage" class="hidden">No se encontraron resultados.</p>
+
+  <!-- Vinculación del JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #141414; /* Fondo tipo Netflix */
+    color: #fff;              /* Texto en blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Encabezado principal */
+  .main-header {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #e50914; /* Rojo Netflix */
+    margin-right: 2rem;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Botones de filtro rápido */
+  .quick-filter {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .quick-filter:hover {
+    background-color: #f6121d;
+  }
+  
+  /* Controles de filtrado y búsqueda */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #181818;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #333;
+  }
+  
+  .controls label {
+    font-weight: bold;
+  }
+  
+  #genreSelect,
+  #searchInput {
+    padding: 0.4rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  #searchButton,
+  #sortButton {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  #searchButton:hover,
+  #sortButton:hover {
+    background-color: #f6121d;
+  }
+  
+  /* Contenedor de películas */
+  #moviesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  /* Tarjeta de película */
+  .movie-card {
+    background-color: #181818;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .movie-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .movie-genre,
+  .movie-year {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #noResultsMessage {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    background-color: #b9090b;
+  }
+  
