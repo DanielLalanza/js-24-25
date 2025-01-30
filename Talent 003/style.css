@@ -1,0 +1,91 @@
+/* Ajustes básicos */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+}
+
+/* Sección principal */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Filtros */
+#filtros {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+#genero {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#accesos-rapidos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Listado de películas */
+#peliculas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#peliculas li {
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Botones */
+button {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+  #filtros {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
